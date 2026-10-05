@@ -1,0 +1,82 @@
+const CONTROLLERS = [
+  {
+    id: "Arduino Nano",
+    name: "Arduino Nano",
+    category: "Microcontroller Board",
+    architecture: "ATmega328P (8-bit AVR)",
+    clockSpeed: "16 MHz",
+    operatingVoltage: "5V",
+    interfaces: ["UART", "SPI", "I2C", "Analog", "Digital"],
+    description: "Compact 8-bit microcontroller board designed for breadboard experimentation.",
+    status: "Ready",
+    pinoutCount: 30,
+    supportedBaudRates: [9600, 115200]
+  },
+  {
+    id: "Arduino Pro Mini",
+    name: "Arduino Pro Mini",
+    category: "Microcontroller Board",
+    architecture: "ATmega328P (8-bit AVR)",
+    clockSpeed: "16 MHz / 8 MHz",
+    operatingVoltage: "5V / 3.3V",
+    interfaces: ["UART", "SPI", "I2C", "Analog", "Digital"],
+    description: "Minimalist low-power microcontroller board for embedded integration.",
+    status: "Ready",
+    pinoutCount: 24,
+    supportedBaudRates: [9600, 57600, 115200]
+  },
+  {
+    id: "ESP32",
+    name: "ESP32",
+    category: "Microcontroller Board (Wi-Fi + BLE)",
+    architecture: "Dual-Core Xtensa LX6 (32-bit)",
+    clockSpeed: "240 MHz",
+    operatingVoltage: "3.3V",
+    interfaces: ["Wi-Fi", "Bluetooth", "UART", "I2C", "SPI", "Analog", "Digital"],
+    description: "High-performance IoT microcontroller with integrated Wi-Fi and Dual-Mode Bluetooth.",
+    status: "Configured",
+    pinoutCount: 38,
+    supportedBaudRates: [115200, 921600]
+  },
+  {
+    id: "Raspberry Pi Pico",
+    name: "Raspberry Pi Pico",
+    category: "Microcontroller Board",
+    architecture: "Dual ARM Cortex-M0+ (RP2040)",
+    clockSpeed: "133 MHz",
+    operatingVoltage: "3.3V",
+    interfaces: ["UART", "I2C", "SPI", "Analog", "Digital", "PIO"],
+    description: "RP2040-based microcontroller board featuring flexible Programmable I/O (PIO).",
+    status: "Ready",
+    pinoutCount: 40,
+    supportedBaudRates: [115200, 230400]
+  },
+  {
+    id: "STM32F103C8D6",
+    name: "STM32F103C8D6 (Blue Pill)",
+    category: "Microcontroller Board",
+    architecture: "ARM Cortex-M3 (32-bit)",
+    clockSpeed: "72 MHz",
+    operatingVoltage: "3.3V",
+    interfaces: ["UART", "I2C", "SPI", "CAN", "Analog", "Digital"],
+    description: "ARM Cortex-M3 development board widely used for embedded systems control.",
+    status: "Ready",
+    pinoutCount: 40,
+    supportedBaudRates: [115200, 460800]
+  },
+  {
+    id: "Raspberry Pi 4",
+    name: "Raspberry Pi 4",
+    category: "Single-Board Computer (SBC)",
+    architecture: "Quad-Core Broadcom BCM2711 (ARM Cortex-A72 64-bit)",
+    clockSpeed: "1.5 GHz",
+    operatingVoltage: "5V",
+    interfaces: ["Wi-Fi", "Bluetooth", "Ethernet", "UART", "I2C", "SPI", "Digital"],
+    description: "Full-featured Single-Board Computer capable of complex IoT gateways and edge AI.",
+    status: "Ready",
+    pinoutCount: 40,
+    supportedBaudRates: [115200, 921600]
+  }
+];
+
+module.exports = CONTROLLERS;
