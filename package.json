@@ -2,12 +2,19 @@
   "name": "edusense-dashboard-root",
   "version": "1.0.0",
   "private": true,
+  "engines": {
+    "node": ">=20.0.0 <25.0.0"
+  },
   "scripts": {
     "dev:server": "cd server && node server.js",
     "dev:client": "cd client && npx vite",
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "build": "cd client && npm run build",
+    "build": "cd client && npm install && npm run build",
     "start": "cd server && node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
